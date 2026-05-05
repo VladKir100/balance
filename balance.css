@@ -1,0 +1,149 @@
+body {
+    background-color: hsl(26, 66%, 93%);
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.myBalance {
+    display: flex;
+    justify-content: space-between;
+    background-color: hsl(10, 79%, 65%);
+    width: 500px;
+    height: 100px;
+    border-radius: 20px;
+    border: none;
+
+}
+
+.text {
+    align-self: center;
+    margin-left: 30px;
+    color: white;
+}
+
+.logo {
+    align-self: center;
+    margin-right: 30px;
+}
+
+.week {
+    background-color: white;
+    width: 500px;
+    height: 450px;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+.ratings {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 200px;
+    width: 100%;
+}
+
+.block1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 200px;
+    width: 10%;
+    position: relative;
+}
+
+.mon {
+    background-color: hsl(10, 79%, 65%);
+    border-radius: 5px;
+    width: 100%;
+    position: relative;
+}
+
+.wrapper {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.block1 p {
+    align-self: center;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: hsl(26, 66%, 93%);
+    margin-top: 30px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    height: 120px;
+}
+
+.total {
+    align-self: center;
+}
+
+.total h1 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.percent {
+    align-self: center;
+}
+
+.procent {
+    width: 45px;
+    font-weight: 600;
+    margin-left: auto;
+}
+
+.dollars {
+    background-color: hsl(25, 47%, 15%);
+    color: white;
+    padding: 6px 8px;
+    border-radius: 5px;
+    opacity: 0;
+    align-self: center;
+    position: absolute;
+    bottom: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.block1:hover .dollars {
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .week {
+        width: 300px;
+    }
+
+    .myBalance {
+        width: 300px;
+    }
+}
